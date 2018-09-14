@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartDoor</string>
+    <string name="title_management">Gestão</string>
+    <string name="title_regist">Registos</string>
+    <string name="title_profile">Conta</string>
+    <string name="title_home">Início</string>
+    <string name="no_account">Não tem conta ? \n Clique aqui para contactar o administrador </string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_records">RecordsActivity</string>
+    <string name="home">Abrir</string>
+    <string name="TitleText">Controlo Remoto de Acesso</string>
+    <string name="username">Username</string>
+    <string name="nfc_id">NFC ID</string>
+    <string name="two_points">::</string>
+    <string name="ManagementTitleText">Crie um Utilizador</string>
+    <string name="CardTitleText">Registos</string>
+    <string name="utilizadores_registados">Utilizadores Registados</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/idIngredientImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_shopping_cart_black_18dp" />
+
+    <CheckedTextView
+        android:id="@+id/idCheckedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:checked="false"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:text="Checked Text View Example"
+        android:textColor="@color/listTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <!-- CheckedTextView In Android -->
+</LinearLayout>

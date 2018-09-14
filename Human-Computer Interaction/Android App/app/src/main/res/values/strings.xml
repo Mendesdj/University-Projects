@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">CAN I COOK IT?</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
+    <string name="search">Search for a Recipe</string>
+    <string name="searchIngredient">Search for an Ingredient</string>
+    <string name="RecipeId">Title</string>
+    <string name="use_inventory">Use Inventory</string>
+    <string name="include_ingredients">Include \n Ingredients</string>
+    <string name="remove_ingredients">Remove \n Ingredients</string>
+    <string name="exclude_ingredients">Exclude \n Ingredients</string>
+    <string name="confection">Confection:</string>
+    <string name="time">Time</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="nutrition">Nutrition:</string>
+    <string name="protein">Protein</string>
+    <string name="calories">Calories</string>
+    <string name="fat">Fat</string>
+    <string name="steps">Steps</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="ingredient">Ingredients:</string>
+    <string name="nutrition_per_serving">Nutrition Per Serving:</string>
+    <string name="add_qr">Add to your inventory with QR Code</string>
+    <string name="add_inventory">Add to Inventory</string>
+    <string name="TopForYou">Top Recipes for You</string>
+    <string name="diet">Diet:</string>
+    <string name="title_activity_diets">Diets</string>
+    <string name="title_activity_diet_edit">Edit diet</string>
+    <string name="diet_name_diet_edit">Diet name</string>
+    <string name="filters">Filters</string>
+    <string name="title_activity_include_exclude">Include ingredient</string>
+    <string name="title_activity_shopping_list_acitivty">Shopping list</string>
+    <string name="add_all_to_shopping_list">Add all to Shopping List</string>
+
+    <string name="menu_item_exit">Exit</string>
+
+    <string name="menu_item_settings">Settings</string>
+
+    <string name="menu_item_edit">Edit</string>
+
+    <string name="menu_item_delete">Delete</string>
+    <string name="inventory">Inventory</string>
+    <string name="delete">Delete</string>
+
+
+</resources>

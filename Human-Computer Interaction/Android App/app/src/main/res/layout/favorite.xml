@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.github.ivbaranov.mfb.MaterialFavoriteButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/favoriteButton"
+    app:mfb_color="white"
+    android:layout_gravity="right"
+    app:mfb_size="55"
+    app:mfb_bounce_duration="30"
+    />

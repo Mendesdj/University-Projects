@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pt.unl.fct.di.www.canicookit.IncludeExcludeActivity"
+    tools:showIn="@layout/activity_include_exclude">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/idCatSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/spinner_border_style"
+            android:padding="4dp"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ListView
+            android:id="@+id/idListViewIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/idAcceptChanges"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/idCatSpinner"
+            android:layout_margin="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="4.0sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/idAcceptChanges"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignEnd="@+id/idListViewIngredients"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:baselineAlignBottom="false"
+            android:contentDescription="TODO"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_checkmark_black_18dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

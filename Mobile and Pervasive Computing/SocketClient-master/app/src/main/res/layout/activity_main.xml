@@ -1,0 +1,101 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/responseTextView"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Server ip address" />
+
+        <EditText
+            android:id="@+id/portEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Server port number" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+
+        <CheckBox
+            android:id="@+id/isAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="isAdmin ?" />
+
+        <EditText
+            android:id="@+id/rfidcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RfidCode" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register User" />
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove User" />
+
+        <Button
+            android:id="@+id/AdminGetEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Get Entries" />
+
+        <Button
+            android:id="@+id/UserGetEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Get Entries" />
+
+        <Button
+            android:id="@+id/AdminGetUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Get Users" />
+
+        <Button
+            android:id="@+id/openDoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Door" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/IngredientButton"
+        app:mfb_color="white"
+        android:layout_gravity="right"
+        app:mfb_size="40"
+        app:mfb_not_favorite_image="@drawable/ic_add_black_18dp"
+        app:mfb_favorite_image="@drawable/ic_checkmark_black_18dp"
+        app:mfb_bounce_duration="30"
+        />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:id="@+id/IngredientText">
+
+    </TextView>
+
+</LinearLayout>
+

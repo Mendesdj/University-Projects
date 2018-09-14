@@ -1,0 +1,31 @@
+[ {
+  "username" : "David Mendes",
+  "enter" : true,
+  "date" : 1529080603769,
+  "isAdmin" : true
+}, {
+  "username" : "David Mendes",
+  "enter" : true,
+  "date" : 1529283990252,
+  "isAdmin" : true
+}, {
+  "username" : "Luis",
+  "enter" : true,
+  "date" : 1529304835594,
+  "isAdmin" : true
+}, {
+  "username" : "Luis",
+  "enter" : true,
+  "date" : 1529304893074,
+  "isAdmin" : true
+}, {
+  "username" : "Luis",
+  "enter" : true,
+  "date" : 1529304914017,
+  "isAdmin" : true
+}, {
+  "username" : "Lenda",
+  "enter" : true,
+  "date" : 1529304992418,
+  "isAdmin" : false
+} ]

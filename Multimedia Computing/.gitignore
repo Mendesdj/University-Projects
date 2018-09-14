@@ -1,0 +1,8 @@
+# Ignore db files
+*.db
+
+# Ignore pdb files
+*.pdb
+
+# Ignore ilk files
+*.ilk

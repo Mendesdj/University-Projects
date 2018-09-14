@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/advancedSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="20dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="@string/use_inventory" />
+
+
+        <ImageView
+            android:id="@+id/imageInfo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_info_black_18dp" />
+
+
+        <TextView
+            android:id="@+id/textDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox"
+            android:layout_marginBottom="-30dp"
+            android:layout_marginLeft="6dp"
+            android:text="@string/diet"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+        <Spinner
+            android:id="@+id/diets_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textDiet"
+            android:layout_marginBottom="-10dp"
+            android:layout_toEndOf="@+id/textDiet" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/textDiet"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/advancedInclude"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idDietName"
+                app:srcCompat="@drawable/ic_add_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/include_ingredients"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/idFloatingInclude"
+                app:layout_constraintTop_toBottomOf="@+id/idDietName" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/advancedExclude"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/idDietName"
+                app:srcCompat="@drawable/ic_remove_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/exclude_ingredients"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idDietName" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/advancedList"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignStart="@id/textDiet"
+            android:layout_marginBottom="64dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="164dp"
+            android:background="@drawable/border_style"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <ListView
+                android:id="@+id/activeFilters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="No Filters Added, \nConsider Including / Excluding Some Ingredients"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:text="@string/filters"
+            android:textColor="@android:color/black" />
+            -->
+
+
+        <TextView
+            android:id="@+id/textConfection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/advancedList"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="420dp"
+            android:text="@string/confection"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textConfection"
+            android:layout_alignStart="@id/textConfection"
+            android:layout_marginBottom="-27dp"
+            android:text="@string/time"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seekBarTime"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textConfection"
+            android:layout_marginBottom="-40dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="4dp"
+            android:paddingStart="60dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textTime"
+            android:layout_toEndOf="@id/seekBarTime"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/textDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textTime"
+            android:layout_alignStart="@id/textTime"
+            android:layout_marginBottom="-25dp"
+            android:text="@string/difficulty"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seekBarDifficulty"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarTime"
+            android:layout_alignStart="@id/seekBarTime"
+            android:layout_marginBottom="-25dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="4dp"
+            android:paddingStart="60dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/currentDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textDifficulty"
+            android:layout_toEndOf="@id/seekBarDifficulty"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/textNutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textDifficulty"
+            android:layout_alignStart="@id/textDifficulty"
+            android:layout_marginBottom="-30dp"
+            android:text="@string/nutrition"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/textProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textNutrition"
+            android:layout_alignStart="@id/textNutrition"
+            android:layout_marginBottom="-27dp"
+            android:text="@string/protein"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seekBarProtein"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textNutrition"
+            android:layout_marginBottom="-40dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="4dp"
+            android:paddingStart="60dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/currentProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textProtein"
+            android:layout_toEndOf="@id/seekBarProtein"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/textCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textProtein"
+            android:layout_alignStart="@id/textProtein"
+            android:layout_marginBottom="-25dp"
+            android:text="@string/calories"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seekBarCalories"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarProtein"
+            android:layout_alignStart="@id/seekBarProtein"
+            android:layout_marginBottom="-25dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="4dp"
+            android:paddingStart="60dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/currentCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textCalories"
+            android:layout_toEndOf="@id/seekBarCalories"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/textFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textCalories"
+            android:layout_alignStart="@id/textCalories"
+            android:layout_marginBottom="-25dp"
+            android:text="@string/fat"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seekBarFat"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarCalories"
+            android:layout_alignStart="@id/seekBarCalories"
+            android:layout_marginBottom="-25dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="4dp"
+            android:paddingStart="60dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/currentFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textFat"
+            android:layout_toEndOf="@id/seekBarFat"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/buttonSearch"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignEnd="@+id/advancedList"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="610dp"
+            android:src="@drawable/ic_search_white_18dp"
+            app:cb_color="#56b99d"
+            app:cb_pressedRingWidth="8dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
